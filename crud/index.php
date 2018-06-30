@@ -7,8 +7,7 @@ if (isset($_POST['submit'])) {
 	    $login = $user->isLoginExist($emailusername, $password);
 	    if ($login) {
 	        // Registration Success
-					header("location:events_list.php");
-	       //header("location:home.php");
+		header("location:events_list.php");
 	    } else {
 	        // Registration Failed
 	        echo 'Wrong username or password';
